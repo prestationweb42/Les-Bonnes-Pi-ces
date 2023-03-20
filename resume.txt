@@ -1,0 +1,78 @@
+//////////////
+Le format JSON (JavaScript Object Notation) permet de décrire vos données sur l’aspect :
+- de leur structure même ;
+- des valeurs concrètes de vos informations.
+
+Il supporte des types :
+- primitifs (nombres, textes, booléens et la valeur null) ;
+- structurants (des objets pour structurer plusieurs informations, et des tableaux pour regrouper plusieurs informations).
+
+Grâce au format JSON, vous pouvez facilement créer et/ou modifier des données.
+
+En JSON, une liste se délimite par des crochets ouvrant et fermant. Vous devez donc écrire : [7.90, 8.20, 9.50].
+
+///////////////
+L’opérateur nullish est très récent en JavaScript.
+expression à tester ?? valeur de substitution
+categorieElement.innerText = article.categorie ?? "(aucune catégorie)";
+
+///////////////
+En manipulant le DOM, vous pouvez :
+- créer de nouveaux éléments avec createElement ;
+- afficher les nouveaux éléments avec appendChild.
+Utilisez des opérateurs pour vérifier vos données avant de les afficher :
+- l’opérateur ternaire pour transformer une valeur en une autre selon 2 possibilités ;
+- l’opérateur nullish pour fournir une valeur de remplacement quand une valeur est null, ou bien lorsqu’elle est undefined.
+
+//////////////
+Pour parcourir vos données afin de générer autant d’éléments du DOM qu’il y a d’éléments dans vos listes, vous pouvez utiliser la boucle for.
+
+Utilisez les 2 méthodes suivantes pour manipuler vos tableaux en fonction de vos besoins :
+- Utilisez la fonction sort pour réordonner les éléments.
+- Utilisez la fonction filter pour éliminer les éléments non désirés et conserver les éléments choisis.
+
+//////////////
+La propriété innerHTML permet d’effacer ou de remplacer le contenu d’un élément du DOM.
+En manipulant le DOM, vous pouvez générer une nouvelle version de la page web.
+La combinaison de ces deux opérations permet de mettre à jour la page lorsque l’utilisateur interagit avec elle.
+
+/////////////
+Section 3 - Interagissez avec un service web en utilisant une API HTTP
+1 - envoyez une requete par le navigateur
+Utilisez les API en ligne pour persister vos données :
+- Les services web permettent de stocker durablement les données grâce à leur API en ligne.
+- Un navigateur web utilise le protocole HTTP pour envoyer des requêtes à destination du serveur.
+-Pour que le serveur identifie le type de requête envoyé, vous devez utiliser des verbes HTTP (POST, GET, PUT, DELETE).Ò
+Utilisez la fonction fetch pour envoyer des requêtes au service web :
+- Les requêtes permettent de manipuler les données.
+- Elle utilise le verbe HTTP GET par défaut.
+
+2 - traitez la réponse du serveur
+En résumé
+Pour traiter les réponses de vos requêtes :
+- Utilisez la syntaxe async/await pour mettre en pause le programme en attendant la réponse.
+- Désérialisez vos données pour décoder le contenu de la réponse.
+- Avec cette réponse, vous pouvez mettre à jour la page web.
+
+3 - Sauvegardez les données grâce à une API HTTP
+En résumé
+Utilisez le deuxième argument de la fonction fetch pour personnaliser votre requête.
+Configurez l’objet du deuxième argument en renseignant trois propriétés :
+- method pour le verbe HTTP ;
+- body pour la charge utile ;
+- headers pour les en-têtes.
+Pour créer une nouvelle ressource avec une API HTTP qui accepte le format JSON, vous devez utiliser :
+- le verbe POST ;
+- un body au format JSON ;
+- un en-tête Content-Type application/json.
+
+4 - Sauvegardez les données dans le localStorage
+En résumé
+Utilisez le localStorage pour optimiser les performances de votre application :
+- pour avoir toujours des données disponibles à afficher en cas de connexion intermittente ou instable ;
+- pour sauvegarder les réponses des requêtes à l’API, et ainsi éviter de les demander en boucle.
+Vous pouvez réaliser différentes opérations dans le localStorage :
+- enregistrer des données grâce à setItem ;
+- récupérer des données enregistrées au préalable grâce à getItem ;
+- supprimer des données grâce à removeItem.
+

@@ -1,0 +1,32 @@
+////////
+Resume Chapitre 1
+En tant que développeur, vous pouvez utiliser des librairies pour gagner du temps dans le développement de votre projet.
+Dans certains cas cependant, il peut être préférable de recourir à un développement en interne :
+- quand le besoin est trop spécifique ;
+- quand la licence logicielle est trop restrictive.
+Vous pouvez trouver des librairies par le biais de sites de référencement tels que :
+- npmjs.com ;
+- GitHub ;
+- Un moteur de recherche avec la recherche “awesome + votre technologie”.
+////////
+Resume Chapitre 2
+Utiliser un gestionnaire de paquets vous permet de :
+- documenter les librairies dont dépend votre projet ;
+- automatiser le téléchargement de ces dépendances ;
+- orchestrer les tâches routinières.
+Lancez la commande npm install nom_du_paquet  pour :
+- enregistrer le paquet comme une dépendance ;
+- télécharger les fichiers nécessaires automatiquement.
+////////
+Resume Chapitre 3
+Pour utiliser votre librairie et enrichir votre page web :
+- Intégrez la librairie à votre page en ajoutant une balise script.
+- Utilisez les fonctionnalités de la librairie en vous appuyant sur de la documentation.
+////////
+Resume Chapitre 4
+Respectez les conventions de codage pour :
+- avoir un code de bonne qualité, consistant et facilement lisible ;
+- uniformiser l’écriture du code à plusieurs.
+Utilisez la librairie ESLint pour :
+- configurer les règles à respecter ;
+- détecter automatiquement les erreurs

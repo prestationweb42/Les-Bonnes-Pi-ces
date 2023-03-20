@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Les Bonnes Pièces</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script type="module" src="pieces.js" defer></script>
+        <script src="node_modules/chart.js/dist/chart.umd.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img src="images/logo-les-bonnes-pieces.png" alt="LOGO" />
+            <h1>Les Bonnes Pièces</h1>
+            <a href="http://localhost:8081/avis" target="_blank"
+                >avis</a
+            >
+            <a href="http://localhost:8081/pieces" target="_blank">piéces</a>
+        </header>
+        <main>
+            <!-- Menu de recherche -->
+            <section class="filtres">
+                <h3>Filtres</h3>
+                <button class="btn-trier">Trier par prix croissants</button>
+                <button class="btn-filtrer">Pièces non abordables</button>
+                <button class="btn-nodesc">Pièces avec descriptions</button>
+                <button class="btn-decroissant">Prix décroissants</button>
+                <p>Filtrer les prix</p>
+                <input
+                    type="range"
+                    value="60"
+                    name="prix-max"
+                    id="prix-max"
+                    min="0"
+                    max="65"
+                    step="5"
+                />
+                <hr />
+                <!-- Formulaire -->
+                <form class="formulaire-avis">
+                    <label for="piece-id">Identifiant de la pièce</label>
+                    <input type="number" name="piece-id" id="piece-id" />
+                    <label for="utilisateur">Nom utilisateur</label>
+                    <input type="text" name="utilisateur" id="utilisateur" />
+                    <label for="commentaire">Votre avis</label>
+                    <input type="text" name="commentaire" id="commentaire" />
+                    <label for="nbEtoiles">Votre note</label>
+                    <input
+                        type="number"
+                        name="nbEtoiles"
+                        id="nbEtoiles"
+                        min="0"
+                        max="5"
+                    />
+                    <button>Envoyez</button>
+                </form>
+                <hr />
+                <!-- BTN effacer les donnees -->
+                <h3>Données</h3>
+                <button class="btn-maj">Mettre à jour les pièces</button>
+                <!-- Graphique étoiles -->
+                <h3>Aperçu des avis</h3>
+                <canvas id="graphique-avis" width="300" height="300"></canvas>
+                <!-- Graphique Commentaires -->
+                <h3>Statistique des commentaires</h3>
+                <canvas id="graphique-dispo" width="300" height="300"></canvas>
+            </section>
+            <!-- Fiches produits -->
+            <section class="fiches">
+                <!-- Code ajouté -->
+                <div class="abordables"></div>
+                <div class="disponibles"></div>
+            </section>
+        </main>
+    </body>
+</html>

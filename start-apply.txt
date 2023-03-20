@@ -1,0 +1,4 @@
+//////////
+Pour démarrer le projet:
+1 - lancer le Live-serveur
+2 - npm start (pour lancer la partie du dom générer avec JS)`
