@@ -1,22 +1,26 @@
 {
-  "name": "api-http",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "json-server --port 8081 --no-cors db.json",
-    "dev": "http-server",
-    "lint": "eslint *.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "chart.js": "^4.2.1",
-    "json-server": "^0.17.0"
-  },
-  "devDependencies": {
-    "@faker-js/faker": "^6.3.1",
-    "eslint": "^8.35.0",
-    "eslint-plugin-react": "^7.32.2"
-  }
+    "homepage": "https://prestationweb42.github.io/Les_Bonnes_Pieces/",
+    "name": "les-bonnes-pieces",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "json-server --port 8081 --no-cors db.json",
+        "dev": "http-server",
+        "lint": "eslint *.js",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "chart.js": "^4.2.1",
+        "json-server": "^0.17.0"
+    },
+    "devDependencies": {
+        "gh-pages": "^5.0.0",
+        "@faker-js/faker": "^6.3.1",
+        "eslint": "^8.35.0",
+        "eslint-plugin-react": "^7.32.2"
+    }
 }
